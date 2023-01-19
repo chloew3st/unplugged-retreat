@@ -482,15 +482,67 @@
         .faq h2 {
             width: 100%;
         }
+        /*=========================================================================================================
+     Desktop Styles
+======================================================================================================== */
         
         @media only screen and (min-width:1200px) {
             /* Desktop styles here */
+            /* General Styles */
+            .content-wrapper {
+                max-width: 960px;
+                margin: 100px 0;
+            }
+        }
+        /* Hero Area */
+        
+        .hero-area h1 {
+            width: 55%;
+        }
+        /* Aside */
+        
+        aside .content-wrapper {
+            justify-content: space-between;
+        }
+        
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form {
+            width: 100%;
+        }
+        /* Features */
+        
+        .features h2 {
+            width: 72%;
+        }
+        
+        .features article {
+            flex-basis: 50%;
+        }
+        /* Reviews */
+        
+        .reviews article div {
+            width: 40%;
+        }
+        /* ========================================================================================
+        About Page
+========================================================================================= */
+        
+        .mission h2,
+        .contact-section .content-wrapper h2 {
+            width: 80%;
+        }
+        /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+        
+        .faq h2 {
+            width: 100%;
         }
         /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+========================================================================== */
         
         @media print {
             *,
